@@ -3,12 +3,13 @@
 En la siguiente información se muestra el diagrama de clases del proyecto **SIGPACO**  (Sistema Integral de Gestións de Pagos y Asistencia de Cursos Online), el proyecto es desarrollado en Java por cuestiones académicas, se integra en Java Web.
 
 ## Tecnología necesarias
-
-- Draw.io – Diseño de Diagrama de clases -- [Descarga](http://https://app.diagrams.net/ "Descarga")
+- Wamp Server --  [Descargar]([https://tomcat.apache.org/download-90.cgi](https://wampserver.aviatechno.net/) "Descargar")
 - JDK Oracle 17 -- [Descargar](https://www.oracle.com/java/technologies/javase/jdk17-0-13-later-archive-downloads.html "Descargar")
 - Netbeans 17 -- [Descargar](https://netbeans.apache.org/front/main/download/nb17/ "Descargar")
+- MySQL Connector/J Version 8.3.0 -- [Descargar]([https://netbeans.apache.org/front/main/download/nb17/](https://downloads.mysql.com/archives/c-j/) "Descargar")
 - Tomcat 9 --  [Descargar](https://tomcat.apache.org/download-90.cgi "Descargar") 
 
+  
 La instalación debe ser en el orden establecido, primero JDK quien permite el desarrollo y compilación de aplicaciones Java.
 Realizar la instalación de Netbeans 17
 
