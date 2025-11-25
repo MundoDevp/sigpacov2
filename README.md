@@ -19,7 +19,7 @@ Mediante el diagrama de clases es la forma principal de integrar el diseño de s
 
 ![](https://github.com/MundoDevp/sigpacoweb/blob/master/capturas/diagrama_clase_sigpaco.jpg?raw=true)
 
-## Estructura del proyecto Version 2 Web
+## Estructura del proyecto Version Final
 En la siguiente imagen se puestra la estructura basica de la integración del codigo fuente con apoyo del diagrama de clase desarrollado .
 ![](https://github.com/MundoDevp/sigpacoweb/blob/master/capturas/estructura_proyecto.png?raw=true)
 
