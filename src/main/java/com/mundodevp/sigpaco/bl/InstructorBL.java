@@ -53,6 +53,17 @@ public class InstructorBL {
         }
         return false;
     }
+     
+     public boolean editar(Instructor instructor){
+        try {
+            instructorJpa.edit(instructor);
+            return true;
+        } catch (Exception ex) {
+            Logger.getLogger(InstructorBL.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return false;
+     }
    
     
 }

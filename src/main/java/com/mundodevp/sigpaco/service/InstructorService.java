@@ -46,6 +46,10 @@ public class InstructorService {
         return instructorBL.eliminar(id);
     }
     
+    public boolean editar(Instructor instructor){
+        return instructorBL.editar(instructor);
+    }
+    
     
     
 }

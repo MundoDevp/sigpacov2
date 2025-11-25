@@ -59,7 +59,16 @@ public class UsuarioBL {
         return false;
     }
    
-    
+    public boolean editar(Usuario usuario){
+        try {
+            usuarioJpa.edit(usuario);
+            return true;
+        } catch (Exception ex) {
+            Logger.getLogger(UsuarioBL.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return false;
+    }
     
     
     

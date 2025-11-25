@@ -46,6 +46,11 @@ public class UsuarioService {
         return usuarioBl.eliminar(id);
     }
     
+    public boolean editar(Usuario usuario){
+        return usuarioBl.editar(usuario);
+    }
+    
+    
     
     
     

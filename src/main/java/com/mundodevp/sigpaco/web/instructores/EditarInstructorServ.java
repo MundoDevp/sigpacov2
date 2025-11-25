@@ -20,7 +20,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "EditarInstructorServ", urlPatterns = {"/editar-instructor"})
 public class EditarInstructorServ extends HttpServlet {
+
     InstructorService instructorService = new InstructorService();
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -31,6 +33,7 @@ public class EditarInstructorServ extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        modificar(request, response);
 
     }
 
@@ -39,10 +42,50 @@ public class EditarInstructorServ extends HttpServlet {
         long idInstructor = Long.parseLong(request.getParameter("id"));
         Instructor instructor = instructorService.obtenerInstructor(idInstructor);
         request.setAttribute("instructor", instructor);
-        
-        request.getRequestDispatcher("editar-instructor.jsp").forward(request, response);
-        
 
+        request.getRequestDispatcher("editar-instructor.jsp").forward(request, response);
+
+    }
+
+    public void modificar(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        long id = Long.parseLong(request.getParameter("idInstructor"));
+        String nombre = request.getParameter("nombre");
+        String apellidos = request.getParameter("apellidos");
+        String telefono = request.getParameter("telefono");
+        String carrera = request.getParameter("carrera");
+        String cedula = request.getParameter("cedula");
+       
+        boolean editado;
+        Instructor instructor = (Instructor) instructorService.obtenerInstructor(id);
+
+        instructor.setNombre(nombre);
+        instructor.setApellidos(apellidos);
+        instructor.setTelefono(telefono);
+        instructor.setCarrera(carrera);
+        instructor.setCedula(cedula);
+       
+
+        //editado = ;
+
+        if (instructorService.editar(instructor)) {
+            request.setAttribute("instructor", instructor);
+            request.setAttribute("status", "success");
+            request.getRequestDispatcher("editar-instructor.jsp").forward(request, response);
+
+        } else {
+            System.out.println("Erroor");
+            requestError(request, response,
+                    "Verificar campos, elegir otro.",
+                    "editar-instructor.jsp");
+
+        }
+
+    }
+
+    public void requestError(HttpServletRequest request, HttpServletResponse response, String msg, String url) throws IOException, ServletException {
+        request.setAttribute("msg", msg);
+        request.getRequestDispatcher(url).forward(request, response);
     }
 
     /**
