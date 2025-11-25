@@ -107,9 +107,9 @@
 
                                                 <td><%= maestro.getUsuarioInst().getEmail()%></td>
                                                 <td>
-                                                    <a class="btn rounded-pill btn-icon btn-info" href="">
+                                                    <!-- comment<a class="btn rounded-pill btn-icon btn-info" href="">
                                                         <span class="tf-icons bi bi-eye"></span>
-                                                    </a>
+                                                    </a> -->
                                                     <a href="<%= request.getContextPath()%>/editar-instructor?id=<%= maestro.getId() %>" class="btn rounded-pill btn-icon btn-warning">
                                                         <span class="tf-icons bi bi-pencil-square"></span>
                                                     </a>
