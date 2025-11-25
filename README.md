@@ -3,6 +3,7 @@
 En la siguiente información se muestra el diagrama de clases del proyecto **SIGPACO**  (Sistema Integral de Gestións de Pagos y Asistencia de Cursos Online), el proyecto es desarrollado en Java por cuestiones académicas, se integra en Java Web.
 
 ## Tecnología necesarias
+- Video de descarga y ejecución --  [Descargar](https://drive.google.com/file/d/1sXlIwjnMKjnACRNcgBhUD-VofHuIT8bk/view?usp=sharing "Descargar")
 - Wamp Server --  [Descargar](https://tomcat.apache.org/download-90.cgi](https://wampserver.aviatechno.net/ "Descargar")
 - JDK Oracle 17 -- [Descargar](https://www.oracle.com/java/technologies/javase/jdk17-0-13-later-archive-downloads.html "Descargar")
 - Netbeans 17 -- [Descargar](https://netbeans.apache.org/front/main/download/nb17/ "Descargar")
