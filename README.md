@@ -19,11 +19,11 @@ Los **diagramas de clase** son herramientas utilizadas actualmente y desde hace 
 
 Mediante el diagrama de clases es la forma principal de integrar el diseño de software orientado a objetos, en nuestro proyecto no sería una excepcion, ya que permite visualizar las relaciones entre las entidades que conformaran el proyecto.
 
-![](https://github.com/MundoDevp/sigpacoweb/blob/master/capturas/diagrama_clase_sigpaco.jpg?raw=true)
+![](https://github.com/MundoDevp/sigpacov2/blob/master/capturas/diagrama_clase_sigpaco.jpg?raw=true)
 
 ## Estructura del proyecto Version Final
 En la siguiente imagen se puestra la estructura basica de la integración del codigo fuente con apoyo del diagrama de clase desarrollado .
-![](https://github.com/MundoDevp/sigpacoweb/blob/master/capturas/estructura_proyecto.png?raw=true)
+![](https://github.com/MundoDevp/sigpacov2/blob/master/capturas/estructura_proyecto.png?raw=true)
 
 Se integra la nueva estructura en ambiente web, todo dividido en diferentes capas siguiendo arquitectura de n-capas para el desarrollo y mejor gestión del proyecto. 
 
