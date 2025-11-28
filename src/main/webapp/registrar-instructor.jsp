@@ -104,11 +104,12 @@
                                                         <div class="input-group input-group-merge">
 
                                                             <input
-                                                                type="text"
+                                                                type="number"
                                                                 id="phoneNumber"
                                                                 name="telefono"
                                                                 class="form-control"
-                                                                placeholder="202 555 0111"
+                                                                placeholder="2025550111"
+                                                                
                                                                 required
                                                                 />
                                                         </div>
@@ -119,7 +120,7 @@
                                                     </div>
                                                     <div class="mb-3 col-md-6">
                                                         <label for="state" class="form-label">Cédula Profesional</label>
-                                                        <input class="form-control" type="text" id="cedula" name="cedula" placeholder="2679392" required/>
+                                                        <input class="form-control" type="number" id="cedula" name="cedula" placeholder="2679392" required/>
                                                     </div>
                                                     <div class="mb-3 col-md-6">
                                                         <label for="email" class="form-label">Nombre de usuario</label>

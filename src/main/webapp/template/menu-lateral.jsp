@@ -99,6 +99,7 @@
 
             </ul>
         </li>
+                        <!-- comment          
         <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bi bi-person-video2"></i>
@@ -117,7 +118,7 @@
                 </li>
 
             </ul>
-        </li>
+        </li> -->      
 
 
 

@@ -11,6 +11,7 @@ package com.mundodevp.sigpaco.bl;
 import com.mundodevp.sigpaco.model.Usuario;
 import com.mundodevp.sigpaco.persistence.UsuarioJpaController;
 import com.mundodevp.sigpaco.persistence.exceptions.NonexistentEntityException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,6 +24,14 @@ public class UsuarioBL {
     
     public List<Usuario> listar(){
         return usuarioJpa.findUsuarioEntities();
+    }
+    public List<Usuario> listarSinAdmin(){
+        List<Usuario> lista = new ArrayList<>();
+        for(Usuario usu : listar()){
+            if(!usu.getRol().equalsIgnoreCase("Administrador"))
+                lista.add(usu);
+        }
+        return lista;
     }
     
     public void crear(Usuario u){
@@ -68,6 +77,10 @@ public class UsuarioBL {
         }
         
         return false;
+    }
+    
+    public int contarUsuarios(){
+        return listar().size();
     }
     
     

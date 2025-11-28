@@ -23,6 +23,10 @@ public class UsuarioService {
         return usuarioBl.listar();
     }
     
+    public List<Usuario>listarSinAdmin(){
+        return usuarioBl.listarSinAdmin();
+    }
+    
     public boolean crear(String correo,String contrasenia, String rol){
         
         if(!Valid.estanVacios(correo, contrasenia, rol) ){
@@ -50,6 +54,9 @@ public class UsuarioService {
         return usuarioBl.editar(usuario);
     }
     
+    public int contarUsuarios(){
+        return usuarioBl.contarUsuarios();
+    }
     
     
     

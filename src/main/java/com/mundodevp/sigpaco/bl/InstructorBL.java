@@ -44,7 +44,7 @@ public class InstructorBL {
         return instructorJpa.findInstructor(id);
     }
     
-     public boolean eliminar(long id){
+    public boolean eliminar(long id){
         try {
             instructorJpa.destroy(id);
             return true;
@@ -54,7 +54,7 @@ public class InstructorBL {
         return false;
     }
      
-     public boolean editar(Instructor instructor){
+    public boolean editar(Instructor instructor){
         try {
             instructorJpa.edit(instructor);
             return true;
@@ -64,6 +64,11 @@ public class InstructorBL {
         
         return false;
      }
+    
+    public int contarInstructores(){
+        return listar().size();
+        
+    }
    
     
 }

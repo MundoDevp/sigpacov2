@@ -50,6 +50,10 @@ public class InstructorService {
         return instructorBL.editar(instructor);
     }
     
+    public int contarInstructores(){
+        return instructorBL.contarInstructores();
+    }
+    
     
     
 }

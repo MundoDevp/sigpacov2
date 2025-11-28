@@ -9,6 +9,7 @@
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/web/DashboardServ.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/model/Usuario.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/bl/UsuarioBL.java
+/Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/bl/EstudianteBL.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/service/UsuarioService.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/web/usuario/EliminarUsuario.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/web/instructores/EliminarInstructorServ.java
@@ -30,4 +31,5 @@
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/web/usuario/EditarUsuarioServ.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/persistence/exceptions/NonexistentEntityException.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/web/usuario/UsuariosServ.java
+/Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/service/EstudianteService.java
 /Users/mundodevp/NetBeansProjects/sigpaco/src/main/java/com/mundodevp/sigpaco/web/instructores/RegistrarInstructorServ.java

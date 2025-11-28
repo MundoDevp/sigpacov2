@@ -58,7 +58,7 @@
 
                 <!-- Layout container -->
                 <div class="layout-page">
-                     <!-- Nav - Top Menu -->
+                    <!-- Nav - Top Menu -->
                     <%@include file="template/menu-top.jsp"%>
 
                     <!-- / Navbar -->
@@ -69,35 +69,57 @@
 
                         <div class="container-xxl flex-grow-1 container-p-y">
                             <div class="row">
-                                <div class="col-lg-6 col-md-12 col-6 mb-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="card-title d-flex align-items-start justify-content-between">
-                                                <div class="avatar flex-shrink-0">
-                                                    <img src="assets/img/icons/unicons/chart-success.png" alt="chart success" class="rounded">
-                                                </div>           
-                                            </div>
-                                            <span class="fw-semibold d-block mb-1">Profit</span>
-                                            <h3 class="card-title mb-2">$12,628</h3>
-                                            <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-6 mb-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="card-title d-flex align-items-start justify-content-between">
-                                                <div class="avatar flex-shrink-0">
-                                                    <img src="assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded">
+                                <div class="col-lg-12 col-md-12 order-0">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-12 col-3 mb-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title d-flex align-items-start justify-content-between">
+                                                        <div class="avatar flex-shrink-0 me-3">
+                                                            <span class="avatar-initial rounded bg-label-primary"><i class="bi bi-person-workspace"></i></span>
+                                                        </div>
+
+                                                    </div>
+                                                    <span class="fw-semibold d-block mb-1 text-primary">Instructores</span>
+                                                    <h3 class="card-title text-success fw-semibold text-nowrap mb-1"><%= "" + session.getAttribute("numeroInstructores") %></h3>
+
                                                 </div>
-                                                
                                             </div>
-                                            <span>Sales</span>
-                                            <h3 class="card-title text-nowrap mb-1">$4,679</h3>
-                                            <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
+                                        </div>
+                                        <div class="col-lg-3 col-md-12 col-3 mb-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title d-flex align-items-start justify-content-between">
+                                                      
+                                                       <div class="avatar flex-shrink-0 me-3">
+                                                            <span class="avatar-initial rounded bg-label-primary"><i class="bi bi-person-video2"></i></span>
+                                                        </div>
+
+                                                    </div>
+                                                    <span class="fw-semibold d-block mb-1 text-primary">Estudiantes</span>
+                                                    <h3 class="card-title text-success fw-semibold text-nowrap mb-1"><%= "" +  session.getAttribute("numeroEstudiantes") %></h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-12 col-3 mb-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title d-flex align-items-start justify-content-between">
+                                                        <div class="avatar flex-shrink-0 me-3">
+                                                            <span class="avatar-initial rounded bg-label-primary"><i class="bi bi-people"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="fw-semibold d-block mb-1 text-primary">Usuario</span>
+                                                    <h3 class="card-title text-success fw-semibold text-nowrap mb-1"><%= "" +  session.getAttribute("numeroUsuarios") %></h3>
+
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
 
 
@@ -154,11 +176,11 @@
 
 
         <!-- Core JS -->
-          <%@include file="template/js.jsp"%>
+        <%@include file="template/js.jsp"%>
 
-       
 
-      
+
+
     </body>
 </html>
 

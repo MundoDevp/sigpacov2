@@ -4,7 +4,7 @@
 function eliminar(id) {
     
     Swal.fire({
-        title: "Estas seguro de eliminar Instructor  ?" + id,
+        title: "Estas seguro de eliminar Instructor?",
         text: "",
         icon: "warning",
         showCancelButton: true,
